@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: flask-ml-api
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    buildCommand: ""
+    startCommand: "python app.py"
+    autoDeploy: true
